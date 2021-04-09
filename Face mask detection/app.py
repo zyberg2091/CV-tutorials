@@ -28,7 +28,7 @@ def model(base_model):
 
     return model
 
-base_model=base_model=tf.keras.applications.VGG16(input_shape=(224,224,3),include_top=False)
+base_model=tf.keras.applications.VGG16(input_shape=(224,224,3),include_top=False)
 
 for layer in base_model.layers:
     layer.trainable=False
